@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>World War Armory</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/icon.png" />
+
+    <style>
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .carousel-transparent {
+            background-color: white;
+            opacity: 0.5;
+        }
+
+        .carousel-capt {
+            text-shadow: 1px 1px black;
+        }
+
+        .thanks {
+            width: 100%;
+            height: 300px;
+            object-fit: cover
+        }
+
+        .about_list {
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Header -->
+    <div class="container-fluid">
+        <div class="sticky-top" style="z-index: 10000000000; border-style: solid;border-color: whitesmoke;">
+            <div class="row" style="height: 100px;background-color: white;">
+                <div class="col-sm-3">
+                    <img src="Assets/logo.png" alt="" style="height: 100px; width: auto;">
+                </div>
+                <div class="col-sm-3"><button type="button" class="btn btn-warning btn-block" disabled>Land</button>
+                </div>
+                <div class="col-sm-3"><button type="button" class="btn btn-primary btn-block" disabled>Naval</button>
+                </div>
+                <div class="col-sm-3"><button type="button" class="btn btn-success btn-block" disabled>Air</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+            style="width: auto;height: 400px;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carousel-image d-block w-100"
+                        src="https://2.bp.blogspot.com/-gac_MVTTswQ/WUyrejwhoLI/AAAAAAAAM-U/r802ouUNOT0EIPfE3alLlUixeJX4WNbZgCLcBGAs/s1600/Fall_of_France+%25281%2529.jpg"
+                        alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-capt">Land War Approaches!</h5>
+                        <p class="carousel-capt">Take a look behind Germany's fearsome new tank design.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-image d-block w-100"
+                        src="https://amp.businessinsider.com/images/5aa30b4ba4f4ac1d008b46a1-1136-852.jpg"
+                        alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-capt">Beyond The Great Divide!</h5>
+                        <p class="carousel-capt">USA preparing to cross into Asia.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class=" carousel-image d-block w-100"
+                        src="https://miro.medium.com/max/1200/1*2F6fxk1oUCcYqn0OUg2MGw.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="text-shadow: 1px 1px black;">Ruler of The Skies</h5>
+                        <p style="text-shadow: 1px 1px black;">Britain to go all in into strategical bombing
+                            doctrine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- hot item -->
+        <div class="row">
+            <div style="background-color: orange; margin-top: 25px; text-align: center;width: 100%;">
+                <h1>TANKS
+                    <span class="badge badge-pill badge-danger">Hot🔥</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- first card -->
+        <div style="background-color: lightgoldenrodyellow;padding-left: 50px;">
+            <div class="row">
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                </row>
+            </div>
+        </div>
+
+        <!-- hot item #2-->
+        <div class="row">
+            <div style="background-color: royalblue; margin-top: 25px; text-align: center;width: 100%;">
+                <h1>WARSHIPS
+                    <span class="badge badge-pill badge-danger">Hot🔥</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- second card -->
+        <div style="background-color: skyblue;padding-left: 50px;">
+            <div class="row">
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                </row>
+            </div>
+        </div>
+
+        <!-- hot item #3-->
+        <div class="row">
+            <div style="background-color: aquamarine; margin-top: 25px; text-align: center;width: 100%;">
+                <h1>WARPLANES
+                    <span class="badge badge-pill badge-danger">Hot🔥</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- third card -->
+        <div style="background-color: lightgreen;padding-left: 50px;">
+            <div class="row">
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; padding: 20px;">
+                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                </row>
+            </div>
+        </div>
+
+        <!-- Commander section-->
+
+        <!-- Commander header -->
+        <div style="background-color: red; margin-top: 25px; text-align: center;">
+            <h1>WHAT THEY GOT TO SAY?</h1>
+        </div>
+
+        <!-- 3 block of commander: 1 from axis Germany, 1 from American, 1 from Soviet -->
+
+        <div class="row">
+            <div class="col-12"
+                style="border-style: solid; border-width: 1px 1px 1px 1px;padding-top: 5px;padding-bottom: 5px;">
+                <div class="row">
+                    <div class="col-2" style="padding: 0;">
+                        <img src="Assets/heinzGuderian.jpg" alt="" class="thanks">
+                    </div>
+                    <div class="col-4">
+                        <p>“If the tanks succeed, then victory follows.”</p>
+                        <p>Hans Guderian, Founder of Blitzkrieg strategy.</p>
+                    </div>
+                    <div class="col-2" style="padding: 0;">
+                        <img src="Assets/erwinRommel.webp" alt="" class="thanks">
+                    </div>
+                    <div class="col-4">
+                        <p>“Anyone who has to fight, even with the most modern weapons, against an enemy in complete
+                            command
+                            of
+                            the air, fights like a savage against modern European troops, under the same handicaps and
+                            with
+                            the
+                            same chances of success.”</p>
+                        <p>Erwin Rommel, German General, Desert Fox.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12"
+                style="border-style: solid; border-width: 1px 1px 1px 1px;padding-top: 5px;padding-bottom: 5px;">
+                <div class="row">
+                    <div class="col-2" style="padding: 0;">
+                        <img src="Assets/georgePatton.jpg" alt="" class="thanks">
+                    </div>
+                    <div class="col-4">
+                        <p>“Wars may be fought with weapons, but they are won by men. It is the spirit of men who follow
+                            and
+                            of
+                            the man who leads that gains the victory.”</p>
+                        <p>George Smith Patton Jr., General of USA Army.</p>
+                    </div>
+                    <div class="col-2" style="padding: 0;">
+                        <img src="Assets/winstonChurchill.jpg" alt="" class="thanks">
+                    </div>
+                    <div class="col-4">
+                        <p>“Air superiority is the ultimate expression of military power.”</p>
+                        <p>Winston Churchill, Prime Minister of The United Kingdom.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+
+        <!-- About Header -->
+        <div style="background-color: grey; margin-top: 25px; text-align: center;">
+            <h1>ABOUT</h1>
+        </div>
+
+        <!-- About your website -->
+        <div class="row">
+            <div class="col-4">
+                <img src="Assets/logo.png" alt="" style="object-fit: cover;">
+            </div>
+            <div class="col-2">
+                <p class="about_list" style="font-weight: bolder;">COMPANY</p>
+                <p class="about_list">About</p>
+                <p class="about_list">Vision</p>
+                <p class="about_list">Mission</p>
+                <p class="about_list">Structure</p>
+                <p class="about_list">Achievement</p>
+                <p class="about_list">Recruitment</p>
+            </div>
+            <div class="col-2">
+                <p class="about_list" style="font-weight: bolder;">JOIN THE CONVERSATION</p>
+                <p class="about_list">Facebook</p>
+                <p class="about_list">Instagram</p>
+                <p class="about_list">Google+</p>
+                <p class="about_list">Reddit</p>
+                <p class="about_list">Linkedin</p>
+                <p class="about_list">Kaskus</p>
+            </div>
+            <div class="col-2">
+                <p class="about_list" style="font-weight: bolder;">OUR AFFILIATED PARTNERS</p>
+                <p class="about_list">Großdeutsches Reich</p>
+                <p class="about_list">Regno d'Italia</p>
+                <p class="about_list">大日本帝國</p>
+                <p class="about_list">United States of America</p>
+                <p class="about_list">Сою́з Сове́тских Социалисти́ческих Респу́блик</p>
+                <p class="about_list">La France Libre</p>
+            </div>
+            <div class="col-2">
+                <p class="about_list" style="font-weight: bolder;">WHERE TO FIND US</p>
+                <p class="about_list">Jakarta</p>
+                <p class="about_list">Bandung</p>
+                <p class="about_list">Tokyo</p>
+                <p class="about_list">Berlin</p>
+                <p class="about_list">Washington</p>
+                <p class="about_list">Moscow</p>
+            </div>
+        </div>
+
+        <!-- Form section -->
+        <div style="background-color: grey; margin-top: 25px; text-align: center;">
+            <h1>HELP US IMPROVE</h1>
+        </div>
+
+
+</body>
+
+</html>
