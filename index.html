@@ -46,6 +46,16 @@
         .about_list {
             margin-bottom: auto;
         }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -57,11 +67,11 @@
                 <div class="col-sm-3">
                     <img src="Assets/logo.png" alt="" style="height: 100px; width: auto;">
                 </div>
-                <div class="col-sm-3"><button type="button" class="btn btn-warning btn-block" disabled>Land</button>
+                <div class="col-sm-3"><a href="#land.header"><br><br>Land</button>
                 </div>
-                <div class="col-sm-3"><button type="button" class="btn btn-primary btn-block" disabled>Naval</button>
+                <div class="col-sm-3"><a href="#naval.header"><br><br>Naval</button>
                 </div>
-                <div class="col-sm-3"><button type="button" class="btn btn-success btn-block" disabled>Air</button>
+                <div class="col-sm-3"><a href="#air.header"><br><br>Air</button>
                 </div>
             </div>
         </div>
@@ -80,7 +90,7 @@
                         src="https://2.bp.blogspot.com/-gac_MVTTswQ/WUyrejwhoLI/AAAAAAAAM-U/r802ouUNOT0EIPfE3alLlUixeJX4WNbZgCLcBGAs/s1600/Fall_of_France+%25281%2529.jpg"
                         alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="carousel-capt">Land War Approaches!</h5>
+                        <h5 class="carousel-capt">Land War Approaches</h5>
                         <p class="carousel-capt">Take a look behind Germany's fearsome new tank design.</p>
                     </div>
                 </div>
@@ -89,8 +99,8 @@
                         src="https://amp.businessinsider.com/images/5aa30b4ba4f4ac1d008b46a1-1136-852.jpg"
                         alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="carousel-capt">Beyond The Great Divide!</h5>
-                        <p class="carousel-capt">USA preparing to cross into Asia.</p>
+                        <h5 class="carousel-capt">Beyond The Great Divide</h5>
+                        <p class="carousel-capt">USA preparing to cross The Pacific.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -115,7 +125,7 @@
         </div>
 
         <!-- hot item -->
-        <div class="row">
+        <div class="row" id="land.header">
             <div style="background-color: orange; margin-top: 25px; text-align: center;width: 100%;">
                 <h1>TANKS
                     <span class="badge badge-pill badge-danger">Hot🔥</span>
@@ -127,58 +137,63 @@
         <div style="background-color: lightgoldenrodyellow;padding-left: 50px;">
             <div class="row">
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
-                        alt="...">
+                    <img src="Assets/t34.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">T-34</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Medium Tank <br>
+                            <span style="font-weight: bold;">Nationality: </span>Russia <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$25,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
-                        alt="...">
+                    <img src="Assets/tiger1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Tiger-1</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Heavy Tank <br>
+                            <span style="font-weight: bold;">Nationality: </span>Germany <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$100,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
-                        alt="...">
+                    <img src="Assets/sherman.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">M4 Sherman</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Medium Tank <br>
+                            <span style="font-weight: bold;">Nationality: </span>USA <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$33,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
-                        alt="...">
+                    <img src="Assets/cromwell.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Cromwell</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Medium Tank <br>
+                            <span style="font-weight: bold;">Nationality: </span>UK <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>£10,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="http://www.eureferendum.com/images/T-34%20pics%20009%20bw.jpg" class="card-img-top"
-                        alt="...">
+                    <img src="Assets/panther.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Panther-1</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Medium Tank <br>
+                            <span style="font-weight: bold;">Nationality: </span>Germany <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$50,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 </row>
@@ -186,7 +201,7 @@
         </div>
 
         <!-- hot item #2-->
-        <div class="row">
+        <div class="row" id="naval.header">
             <div style="background-color: royalblue; margin-top: 25px; text-align: center;width: 100%;">
                 <h1>WARSHIPS
                     <span class="badge badge-pill badge-danger">Hot🔥</span>
@@ -198,58 +213,63 @@
         <div style="background-color: skyblue;padding-left: 50px;">
             <div class="row">
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/yamato.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Yamato</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span>Super Battleship<br>
+                            <span style="font-weight: bold;">Nationality: </span>Japan <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>250,000,000 JPY</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/enterprise.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Enterprise</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span>Yorktown-class Carrier<br>
+                            <span style="font-weight: bold;">Nationality: </span>USA <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$20,000,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/bismarck.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Bismarck</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span>Fast Battleship <br>
+                            <span style="font-weight: bold;">Nationality: </span>Germany <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>RM 196,800,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/iowa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Iowa</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span>Iowa-class Battleship<br>
+                            <span style="font-weight: bold;">Nationality: </span>USA<br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$100,000,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fubuki.jpg/300px-Fubuki.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/u-boat.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">U-99</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Type VIIB U-boat <br>
+                            <span style="font-weight: bold;">Nationality: </span>Germany <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$2,250,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 </row>
@@ -257,7 +277,7 @@
         </div>
 
         <!-- hot item #3-->
-        <div class="row">
+        <div class="row" id="air.header">
             <div style="background-color: aquamarine; margin-top: 25px; text-align: center;width: 100%;">
                 <h1>WARPLANES
                     <span class="badge badge-pill badge-danger">Hot🔥</span>
@@ -269,58 +289,63 @@
         <div style="background-color: lightgreen;padding-left: 50px;">
             <div class="row">
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/zero.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">A6M2-Zero</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Fighter <br>
+                            <span style="font-weight: bold;">Nationality: </span>Japan <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$25,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/bf109.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">BF109G-14</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Fighter <br>
+                            <span style="font-weight: bold;">Nationality: </span>Germany <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>RM 56,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/spitfire.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Spitfire MK IX</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Fighter <br>
+                            <span style="font-weight: bold;">Nationality: </span>UK <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>£12,500</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/mustang.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">P-51D Mustang</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Fighter <br>
+                            <span style="font-weight: bold;">Nationality: </span>USA <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>$51,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; padding: 20px;">
-                    <img src="https://i.pinimg.com/originals/a7/6d/01/a76d0182ddf2a284e02b67f2bd368bad.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="Assets/stuka.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Ju 87 "Stuka"</h5>
+                        <p class="card-text">
+                            <span style="font-weight: bold;">Class: </span> Dive-bomber <br>
+                            <span style="font-weight: bold;">Nationality: </span>Germany <br>
+                            <span style="font-weight: bold;">Unit Cost: </span>RM 40,000</p>
+                        <a href="#" class="btn btn-success"><span style="font-weight: bold;">🔎</span></a>
+                        <a href="#" class="btn btn-warning"><span style="font-weight: bold;">add to cart 🛒</span></a>
                     </div>
                 </div>
                 </row>
@@ -441,6 +466,33 @@
         <!-- Form section -->
         <div style="background-color: grey; margin-top: 25px; text-align: center;">
             <h1>HELP US IMPROVE</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="height: 650px; background-color: darkslategray;">
+                <div style="background-color: whitesmoke; margin: 50px;height: 550px;">
+                    <form style="text-align: center; padding-top: 20px;">
+                        <p>Name</p>
+                        <input type="text" placeholder="Fadhilah Metra" style="text-align: center;">
+                        <br><br>
+                        <p>Affiliation</p>
+                        <select>
+                            <option>School</option>
+                            <option>University</option>
+                            <option>Government</option>
+                            <option>Private Sector</option>
+                            <option>Self-employed</option>
+                            <option>Un-employed</option>
+                        </select>
+                        <br><br>
+                        <p>Criticism/Impression/Words of Advice</p>
+                        <input type="text" size="180" style="height: 230px;text-align: center;"
+                            placeholder="write your thoughts here....">
+                        <br><br>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
         </div>
 
 
